@@ -40,10 +40,6 @@ const CardProduto = styled.div`
   justify-content: space-between;
 `;
 class Carrinho extends React.Component {
-  // state={
-  //   valorViagem:,
-  // }
-
   render() {
     const { produtos } = this.props;
 
@@ -55,7 +51,7 @@ class Carrinho extends React.Component {
 
         {produtos.map((produto) => (
           <CardProduto>
-            <span style={{ marginRight: "10px" }}>2x</span>
+            <span style={{ marginRight: "10px" }}>{produto.quantidade}x</span>
             <span>Produto {produto.name}</span>
             <button>Remover</button>
           </CardProduto>
