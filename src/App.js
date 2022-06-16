@@ -19,12 +19,22 @@ class App extends React.Component {
     this.setState({ carrinho: novoCarrinho });
   };
 
+  /*  
+  apagarViagem = viagemId => {
+    const novoCarrinho = this.state.carrinho.filter(produto => {
+      return viagemId !== viagem.id;
+    });
+
+    this.setState({ carrinho: novoCarrinho });
+  };
+  */
+
   render() {
     return (
       <Container>
         <Filtro />
         <Produtos adicionarProduto={this.adicionarProduto} />
-        <Carrinho produtos={this.state.carrinho} />
+        <Carrinho produtos={this.state.carrinho} /*, apagarViagem={this.apagarViagem}, quantidaCarrinho = {this.state.carrinho.length}   */ />
       </Container>
     );
   }
