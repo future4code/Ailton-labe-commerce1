@@ -9,7 +9,10 @@ const Container = styled.div`
   flex-direction: row;
 `;
 
-function App() {
+class App extends React.Component {
+  render(){
+
+  
   return (
     <Container>
       <Filtro />
@@ -17,6 +20,7 @@ function App() {
       <Carrinho />
     </Container>
   );
+}
 }
 
 export default App;
