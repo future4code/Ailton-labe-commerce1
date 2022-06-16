@@ -40,12 +40,27 @@ const CardProduto = styled.div`
   justify-content: space-between;
 `;
 class Carrinho extends React.Component {
-  // state={
-  //   valorViagem:,
-  // }
+/* const Carrinho = props => { */  
 
   render() {
     const { produtos } = this.props;
+    /* 
+    
+    no que adiciona viagem
+    
+    state = { contador = 0,}   
+    atualizaContador = () => {
+		this.setState({contador: this.state.contador + 1})
+	}
+
+
+  no Remover  
+
+  	atualizaContador = () => {
+		this.setState({contador: this.state.contador - 1})
+	}
+    
+    */
 
     return (
       <Container>
@@ -57,16 +72,9 @@ class Carrinho extends React.Component {
           <CardProduto>
             <span style={{ marginRight: "10px" }}>2x</span>
             <span>Produto {produto.name}</span>
-            <button>Remover</button>
+            <button /* onClick={() => props.apagarViagem(props.carrinho.id)} */>Remover</button>
           </CardProduto>
         ))}
-
-        {/* <CardProdutoAdd>
-          <Quantidade placeholder={"Qtd"} />
-          <Produto placeholder={"Produto"} />
-          <ButtonRemover> Remover</ButtonRemover>
-        </CardProdutoAdd> */}
-
         <div>
           <p>recebe código de soma</p>
         </div>
@@ -77,3 +85,6 @@ class Carrinho extends React.Component {
 }
 
 export default Carrinho;
+
+
+/*   */
