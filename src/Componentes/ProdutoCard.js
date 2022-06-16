@@ -18,14 +18,14 @@ const Image = styled.img`
 `;
 
 function ProdutoCard(props) {
-  const { name, value, imageUrl } = props;
+  const { name, value, imageUrl, id, adicionarProduto } = props;
   return (
     <Container>
       <Image src={imageUrl} />
       <Content>
         <p>{name}</p>
         <p>R$ {value}</p>
-        <button>Adicionar Viagem</button>
+        <button onClick={() => adicionarProduto(id)}>Adicionar Viagem</button>
       </Content>
     </Container>
   );

@@ -10,17 +10,24 @@ const Container = styled.div`
 `;
 
 class App extends React.Component {
-  render(){
+  state = {
+    carrinho: [],
+  };
 
-  
-  return (
-    <Container>
-      <Filtro />
-      <Produtos />
-      <Carrinho />
-    </Container>
-  );
-}
+  adicionarProduto = (produto) => {
+    const novoCarrinho = [...this.state.carrinho, produto];
+    this.setState({ carrinho: novoCarrinho });
+  };
+
+  render() {
+    return (
+      <Container>
+        <Filtro />
+        <Produtos adicionarProduto={this.adicionarProduto} />
+        <Carrinho produtos={this.state.carrinho} />
+      </Container>
+    );
+  }
 }
 
 export default App;

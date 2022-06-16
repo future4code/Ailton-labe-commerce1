@@ -53,11 +53,20 @@ class Produtos extends React.Component {
     ],
   };
 
+  adicionarProduto = (id) => {
+    const produto = this.state.produtos.find((produto) => produto.id === id);
+
+    if (produto) {
+      this.props.adicionarProduto(produto);
+    }
+  };
+
   render() {
+    console.log(this.state.carrinho);
     return (
       <Container>
         <FiltroContainer>
-          <span>Quantidade de produtos: {this.state.produtos.length}</span>
+          <span> Quantidade de produtos: {this.state.produtos.length}</span>
           <div>
             <span style={{ marginRight: "10px" }}>Ordernação</span>
             <select>
@@ -70,9 +79,11 @@ class Produtos extends React.Component {
           {this.state.produtos.map((produto) => (
             <ProdutoCard
               key={produto.id}
+              id={produto.id}
               name={produto.name}
               value={produto.value}
               imageUrl={produto.imageUrl}
+              adicionarProduto={this.adicionarProduto}
             />
           ))}
         </CardsContainer>
