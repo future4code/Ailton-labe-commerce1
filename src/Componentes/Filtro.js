@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
+const ContainerFiltro = styled.div`
   display: flex;
   flex-direction: column;
   border: 1px solid black;
@@ -31,7 +31,7 @@ class Filtro extends React.Component {
 
   render() {
     return (
-      <Container>
+      <ContainerFiltro>
         <h3>FILTROS</h3>
         <div>
           <span>Valor mínimo: </span>
@@ -57,7 +57,7 @@ class Filtro extends React.Component {
             onChange={this.buscaNomeOnChange}
           ></input>
         </div>
-      </Container>
+      </ContainerFiltro>
     );
   }
 }
