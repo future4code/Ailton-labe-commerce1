@@ -1,17 +1,21 @@
-import React from 'react';
+import React from "react";
 import Filtro from "./Componentes/Filtro";
 import Carrinho from "./Componentes/Carrinho";
-import PaginaProdutos from "./Componentes/PaginaProdutos"
-import './App.css';
+import Produtos from "./Componentes/Produtos";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <Filtro></Filtro>
-
-
-      <Carrinho></Carrinho>
-    </div>
+    <Container>
+      <Filtro />
+      <Produtos />
+      <Carrinho />
+    </Container>
   );
 }
 
