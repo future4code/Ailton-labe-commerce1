@@ -12,9 +12,9 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
-      {/* <Filtro /> */}
+      <Filtro />
       <Produtos />
-      {/* <Carrinho /> */}
+      <Carrinho />
     </Container>
   );
 }
