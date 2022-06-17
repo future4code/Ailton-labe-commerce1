@@ -25,31 +25,46 @@ class Produtos extends React.Component {
     produtos: [
       {
         id: 1,
-        name: "Jupiter",
+        name: "Viagem para Jupiter",
         value: 200000,
         imageUrl:
           "https://d168rbuicf8uyi.cloudfront.net/wp-content/uploads/2018/12/14192245/jupiter-personare.png",
       },
       {
         id: 2,
-        name: "Lua",
+        name: "Viagem para Lua",
         value: 300000,
         imageUrl:
           "https://s.calendarr.com/upload/articles/lu/ac/lua-cheia-c.jpg?auto_optimize=low&width=640",
       },
       {
         id: 3,
-        name: "Marte",
+        name: "Viagem para Marte",
         value: 600000,
         imageUrl:
           "https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/8465a67d00eda6b73b4485921e5fac7a.jpg",
       },
       {
         id: 4,
-        name: "Sol",
+        name: "Viagem para o Sol",
         value: 1000000,
         imageUrl:
           "https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2020/08/sol-afinal-qual-e-sua-cor-conceitos-e-caracteristicas.jpg",
+      },
+      {
+        id: 5,
+        name: "Tour pela Galaxia",
+        value: 570000,
+        imageUrl:
+          "https://st.depositphotos.com/1757583/3326/i/450/depositphotos_33266691-stock-photo-deep-outer-space.jpg",
+      },
+
+      {
+        id: 6,
+        name: "Viagem para Saturno",
+        value: 770000,
+        imageUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Saturn_false_color_Voyager-1.jpg/800px-Saturn_false_color_Voyager-1.jpg",
       },
     ],
   };
