@@ -5,7 +5,7 @@ Sejam bem vindos ao Labe-commerce, esse repositório contém um esqueleto de app
 
 <h1> PROJETO SITE DE ECOMMERCE PARA VIAGENS ESPACIAIS </h1>
 
-<h2> <a target="_blanck" href="*LINK DO SITE AQUI"> Link para acessar o site </a> </h2>
+<h2> <a target="_blanck" href="https://taboo-afternoon.surge.sh/"> Link para acessar o site </a> </h2>
 
 <h3> Descrição </h3>
 
@@ -18,7 +18,6 @@ O intuito do projeto é praticar as habilidade em React, como Styled, Filter, Ma
 Sort, Props, Estado e trabalho em grupo.
 </p>
 
-<a href="https://taboo-afternoon.surge.sh/">Visite nossa loja!</a>
 
 <h3> O site possui as seguintes operações <h3>
 
