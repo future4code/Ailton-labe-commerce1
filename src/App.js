@@ -54,6 +54,16 @@ class App extends React.Component {
     }
   };
 
+  /*  
+  apagarViagem = viagemId => {
+    const novoCarrinho = this.state.carrinho.filter(produto => {
+      return viagemId !== viagem.id;
+    });
+
+    this.setState({ carrinho: novoCarrinho });
+  };
+  */
+
   render() {
     return (
       <Container>
