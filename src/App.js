@@ -12,6 +12,11 @@ const Container = styled.div`
 class App extends React.Component {
   state = {
     carrinho: [],
+    filtro: {
+      valorMinimo: 0,
+      valorMaximo: null,
+      buscaNome: "",
+    },
   };
 
   adicionarProduto = (novoProduto) => {
@@ -64,11 +69,20 @@ class App extends React.Component {
   };
   */
 
+  aplicarFiltro = (filtro) => {
+    this.setState({
+      filtro,
+    });
+  };
+
   render() {
     return (
       <Container>
-        <Filtro />
-        <Produtos adicionarProduto={this.adicionarProduto} />
+        <Filtro aplicarFiltro={this.aplicarFiltro} />
+        <Produtos
+          adicionarProduto={this.adicionarProduto}
+          filtro={this.state.filtro}
+        />
         <Carrinho
           produtos={this.state.carrinho}
           apagarViagem={this.apagarViagem}

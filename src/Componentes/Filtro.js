@@ -29,6 +29,9 @@ class Filtro extends React.Component {
     this.setState({ buscaNome: e.target.value });
   };
 
+  aplicarFiltro = () => {
+    this.props.aplicarFiltro(this.state);
+  };
   render() {
     return (
       <ContainerFiltro>
@@ -56,6 +59,9 @@ class Filtro extends React.Component {
             value={this.state.buscaNome}
             onChange={this.buscaNomeOnChange}
           ></input>
+        </div>
+        <div>
+          <button onClick={this.aplicarFiltro}>Aplicar filtro</button>
         </div>
       </ContainerFiltro>
     );
